@@ -20,12 +20,25 @@
       <nav class="nav" aria-label="Navigazione principale">
         <a href="#struttura">Struttura</a>
         <a href="#spazi">Spazi</a>
+        <a href="#video">Video</a>
         <a href="#contatti">Contatti</a>
       </nav>
     </header>
 
     <main>
       <section class="hero" id="home">
+        <video
+          class="hero-video"
+          data-hero-video
+          autoplay
+          muted
+          loop
+          playsinline
+          poster="assets/esterno_codex.png"
+          aria-label="Video render esterno della Palazzina Iezzi"
+        >
+          <source src="assets/videos/rendering_palazzina_codex.mp4" type="video/mp4" />
+        </video>
         <img
           class="hero-image"
           src="assets/esterno_codex.png"
@@ -36,12 +49,13 @@
           <p class="eyebrow">Proposta immobiliare</p>
           <h1>Palazzina Iezzi</h1>
           <p class="hero-copy">
-            Una struttura contemporanea pensata per valorizzare spazi commerciali,
-            residenziali e potenziale di investimento.
+            Render video e immagini selezionate per presentare con immediatezza
+            struttura, appartamenti e piano commerciale.
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="#struttura">Scopri la struttura</a>
-            <a class="button button-secondary" href="#contatti">Richiedi informazioni</a>
+            <a class="button button-secondary" href="#video">Guarda i render</a>
+            <a class="button button-secondary" href="#contatti">Contattaci</a>
           </div>
         </div>
       </section>
@@ -113,6 +127,81 @@
         </div>
       </section>
 
+      <section class="video-section" id="video">
+        <div class="section-heading">
+          <p class="eyebrow">Video rendering</p>
+          <h2>Un racconto visivo completo della palazzina.</h2>
+        </div>
+
+        <div class="video-layout">
+          <article class="video-card">
+            <video
+              controls
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              poster="assets/esterno_codex.png"
+              aria-label="Video render esterno della Palazzina Iezzi"
+              data-autoplay-video
+            >
+              <source src="assets/videos/rendering_palazzina_codex.mp4" type="video/mp4" />
+            </video>
+            <div>
+              <p class="eyebrow">Esterno</p>
+              <h3>Prima impressione</h3>
+              <p>Il carattere della palazzina raccontato appena si entra nella pagina.</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <video
+              controls
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              poster="assets/interni_codex.png"
+              aria-label="Video render interno appartamento"
+              data-autoplay-video
+            >
+              <source
+                src="assets/videos/rendering_interni_appartamento_codex.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <div>
+              <p class="eyebrow">Appartamento</p>
+              <h3>Interni residenziali</h3>
+              <p>Ambienti caldi e leggibili per far percepire il potenziale abitativo.</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <video
+              controls
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              poster="assets/piano_commerciale_codex.png"
+              aria-label="Video render piano commerciale"
+              data-autoplay-video
+            >
+              <source
+                src="assets/videos/rendering_piano_commerciale_codex.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <div>
+              <p class="eyebrow">Commerciale</p>
+              <h3>Piano terra</h3>
+              <p>Una visione dinamica dello spazio per attività, servizi o showroom.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section class="gallery" aria-label="Galleria immagini">
         <button class="gallery-button active" data-image="assets/esterno_codex.png" data-title="Esterno">
           Esterno
@@ -134,22 +223,69 @@
       </section>
 
       <section class="contact" id="contatti">
-        <div>
+        <div class="contact-content">
           <p class="eyebrow">Contatti</p>
-          <h2>Pronto per diventare una scheda cliente completa.</h2>
+          <h2>Richiedi informazioni sulla Palazzina Iezzi.</h2>
           <p>
-            Nel prossimo passaggio possiamo aggiungere dati tecnici,
-            metrature, indirizzo, prezzo, planimetrie scaricabili e modulo di
-            contatto.
+            Lascia i dati del cliente e una nota sulla richiesta. La sezione e'
+            pronta per essere collegata in seguito a email, CRM o gestione lead.
           </p>
+          <address class="location">
+            Via XX Settembre 52<br />
+            Manoppello Scalo, Provincia di Pescara
+          </address>
+
+          <div class="map-card">
+            <iframe
+              title="Mappa Palazzina Iezzi"
+              src="https://www.google.com/maps?q=Via%20XX%20Settembre%2052%2C%20Manoppello%20Scalo%2C%20PE&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <a
+              class="map-link"
+              href="https://www.google.com/maps/dir/?api=1&destination=Via%20XX%20Settembre%2052%2C%20Manoppello%20Scalo%2C%20PE"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Apri indicazioni su Google Maps
+            </a>
+          </div>
         </div>
-        <a class="button button-primary" href="mailto:info@example.com">Contattaci</a>
+
+        <form class="contact-form" action="mailto:info@example.com" method="post" enctype="text/plain">
+          <div class="form-row">
+            <label>
+              Nome
+              <input type="text" name="nome" autocomplete="given-name" />
+            </label>
+            <label>
+              Cognome
+              <input type="text" name="cognome" autocomplete="family-name" />
+            </label>
+          </div>
+          <div class="form-row">
+            <label>
+              Telefono
+              <input type="tel" name="telefono" autocomplete="tel" />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" autocomplete="email" />
+            </label>
+          </div>
+          <label>
+            Note
+            <textarea name="note" rows="5"></textarea>
+          </label>
+          <button class="button button-primary" type="submit">Invia richiesta</button>
+        </form>
       </section>
     </main>
 
     <footer class="footer">
       <span>Palazzina Iezzi</span>
-      <span>Prototipo locale</span>
+      <span>Via XX Settembre 52, Manoppello Scalo (PE)</span>
     </footer>
 
     <script src="script.js"></script>
