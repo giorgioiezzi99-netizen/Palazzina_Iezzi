@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palazzina Iezzi</title>
+    <meta
+      name="description"
+      content="Palazzina Iezzi, proposta immobiliare moderna con spazio commerciale, interni residenziali e struttura in evidenza."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="Palazzina Iezzi home">
+        <span class="brand-mark">PI</span>
+        <span>Palazzina Iezzi</span>
+      </a>
+
+      <nav class="nav" aria-label="Navigazione principale">
+        <a href="#struttura">Struttura</a>
+        <a href="#spazi">Spazi</a>
+        <a href="#contatti">Contatti</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <img
+          class="hero-image"
+          src="assets/esterno_codex.png"
+          alt="Render esterno della Palazzina Iezzi"
+        />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Proposta immobiliare</p>
+          <h1>Palazzina Iezzi</h1>
+          <p class="hero-copy">
+            Una struttura contemporanea pensata per valorizzare spazi commerciali,
+            residenziali e potenziale di investimento.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#struttura">Scopri la struttura</a>
+            <a class="button button-secondary" href="#contatti">Richiedi informazioni</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro" id="struttura">
+        <div>
+          <p class="eyebrow">Biglietto da visita</p>
+          <h2>Un immobile chiaro da leggere, semplice da presentare.</h2>
+        </div>
+        <p>
+          Questo primo prototipo mette in evidenza la palazzina, il piano
+          commerciale e la qualità degli ambienti interni. La struttura è
+          pensata per essere aggiornata rapidamente con testi, dati tecnici e
+          materiali commerciali definitivi.
+        </p>
+      </section>
+
+      <section class="stats" aria-label="Punti chiave">
+        <article>
+          <span>01</span>
+          <strong>Fronte urbano</strong>
+          <p>Immagine esterna immediata, adatta alla prima presentazione con il cliente.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <strong>Piano commerciale</strong>
+          <p>Spazio flessibile per attività, showroom, servizi o uso direzionale.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <strong>Interni valorizzati</strong>
+          <p>Render puliti per comunicare atmosfera, luce e possibilità abitative.</p>
+        </article>
+      </section>
+
+      <section class="showcase" id="spazi">
+        <div class="section-heading">
+          <p class="eyebrow">Gli spazi</p>
+          <h2>Materiale visivo pronto per una proposta commerciale.</h2>
+        </div>
+
+        <div class="showcase-grid">
+          <article class="feature feature-large">
+            <img
+              src="assets/piano_commerciale_codex.png"
+              alt="Render del piano commerciale della Palazzina Iezzi"
+            />
+            <div class="feature-text">
+              <p class="eyebrow">Piano commerciale</p>
+              <h3>Una base operativa visibile e versatile.</h3>
+              <p>
+                Il piano terra diventa il punto più diretto della proposta:
+                aperto, leggibile e facile da immaginare in diversi scenari.
+              </p>
+            </div>
+          </article>
+
+          <article class="feature">
+            <img src="assets/interni_codex.png" alt="Render degli interni della Palazzina Iezzi" />
+            <div class="feature-text">
+              <p class="eyebrow">Interni</p>
+              <h3>Ambienti accoglienti, essenziali, luminosi.</h3>
+              <p>
+                Una comunicazione visiva semplice aiuta il cliente a percepire
+                subito il potenziale degli appartamenti.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="gallery" aria-label="Galleria immagini">
+        <button class="gallery-button active" data-image="assets/esterno_codex.png" data-title="Esterno">
+          Esterno
+        </button>
+        <button
+          class="gallery-button"
+          data-image="assets/piano_commerciale_codex.png"
+          data-title="Piano commerciale"
+        >
+          Piano commerciale
+        </button>
+        <button class="gallery-button" data-image="assets/interni_codex.png" data-title="Interni">
+          Interni
+        </button>
+        <div class="gallery-preview">
+          <img data-preview src="assets/esterno_codex.png" alt="Esterno" />
+          <span data-preview-title>Esterno</span>
+        </div>
+      </section>
+
+      <section class="contact" id="contatti">
+        <div>
+          <p class="eyebrow">Contatti</p>
+          <h2>Pronto per diventare una scheda cliente completa.</h2>
+          <p>
+            Nel prossimo passaggio possiamo aggiungere dati tecnici,
+            metrature, indirizzo, prezzo, planimetrie scaricabili e modulo di
+            contatto.
+          </p>
+        </div>
+        <a class="button button-primary" href="mailto:info@example.com">Contattaci</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Palazzina Iezzi</span>
+      <span>Prototipo locale</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
