@@ -15,7 +15,11 @@ Palazzina_manoppello/
 └── assets/
     ├── esterno_codex.png
     ├── interni_codex.png
-    └── piano_commerciale_codex.png
+    ├── piano_commerciale_codex.png
+    └── videos/
+        ├── rendering_interni_appartamento_codex.mp4
+        ├── rendering_palazzina_codex.mp4
+        └── rendering_piano_commerciale_codex.mp4
 ```
 
 ## Come aprirlo in locale
@@ -38,4 +42,5 @@ http://localhost:8000
 
 - Il progetto non e' ancora collegato a GitHub.
 - Le immagini del sito sono nella cartella `assets/`.
+- I video render sono nella cartella `assets/videos/`.
 - I testi, i colori e le sezioni principali si modificano in `index.html` e `style.css`.
