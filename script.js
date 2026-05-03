@@ -1,25 +1,11 @@
 const header = document.querySelector("[data-header]");
 const heroVideo = document.querySelector("[data-hero-video]");
 const autoplayVideos = document.querySelectorAll("[data-autoplay-video]");
-const galleryButtons = document.querySelectorAll(".gallery-button");
-const previewImage = document.querySelector("[data-preview]");
-const previewTitle = document.querySelector("[data-preview-title]");
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 function updateHeader() {
   header.classList.toggle("scrolled", window.scrollY > 24);
 }
-
-galleryButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    galleryButtons.forEach((item) => item.classList.remove("active"));
-    button.classList.add("active");
-
-    previewImage.src = button.dataset.image;
-    previewImage.alt = button.dataset.title;
-    previewTitle.textContent = button.dataset.title;
-  });
-});
 
 window.addEventListener("scroll", updateHeader);
 updateHeader();

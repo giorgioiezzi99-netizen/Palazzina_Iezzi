@@ -60,35 +60,28 @@
         </div>
       </section>
 
-      <section class="intro" id="struttura">
-        <div>
-          <p class="eyebrow">Biglietto da visita</p>
-          <h2>Un immobile chiaro da leggere, semplice da presentare.</h2>
+      <section class="proposal" id="struttura">
+        <div class="proposal-copy">
+          <p class="eyebrow">La proposta</p>
+          <h2>Una presentazione essenziale, costruita per arrivare subito al valore.</h2>
         </div>
-        <p>
-          Questo primo prototipo mette in evidenza la palazzina, il piano
-          commerciale e la qualità degli ambienti interni. La struttura è
-          pensata per essere aggiornata rapidamente con testi, dati tecnici e
-          materiali commerciali definitivi.
-        </p>
-      </section>
-
-      <section class="stats" aria-label="Punti chiave">
-        <article>
-          <span>01</span>
-          <strong>Fronte urbano</strong>
-          <p>Immagine esterna immediata, adatta alla prima presentazione con il cliente.</p>
-        </article>
-        <article>
-          <span>02</span>
-          <strong>Piano commerciale</strong>
-          <p>Spazio flessibile per attività, showroom, servizi o uso direzionale.</p>
-        </article>
-        <article>
-          <span>03</span>
-          <strong>Interni valorizzati</strong>
-          <p>Render puliti per comunicare atmosfera, luce e possibilità abitative.</p>
-        </article>
+        <div class="proposal-points" aria-label="Punti chiave">
+          <article>
+            <span>01</span>
+            <strong>Fronte urbano</strong>
+            <p>Prima impressione forte e immediata della palazzina.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <strong>Piano commerciale</strong>
+            <p>Spazio flessibile per attivita', showroom o uso direzionale.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <strong>Interni residenziali</strong>
+            <p>Ambienti leggibili per comunicare luce e possibilita' abitative.</p>
+          </article>
+        </div>
       </section>
 
       <section class="showcase" id="spazi">
@@ -100,7 +93,8 @@
         <div class="showcase-grid">
           <article class="feature feature-large">
             <img
-              src="assets/piano_commerciale_codex.png"
+              class="space-image"
+              src="assets/piano_commerciale_codex_corretto.png"
               alt="Render del piano commerciale della Palazzina Iezzi"
             />
             <div class="feature-text">
@@ -114,7 +108,11 @@
           </article>
 
           <article class="feature">
-            <img src="assets/interni_codex.png" alt="Render degli interni della Palazzina Iezzi" />
+            <img
+              class="space-image"
+              src="assets/interni_codex.png"
+              alt="Render degli interni della Palazzina Iezzi"
+            />
             <div class="feature-text">
               <p class="eyebrow">Interni</p>
               <h3>Ambienti accoglienti, essenziali, luminosi.</h3>
@@ -129,8 +127,8 @@
 
       <section class="video-section" id="video">
         <div class="section-heading">
-          <p class="eyebrow">Video rendering</p>
-          <h2>Un racconto visivo completo della palazzina.</h2>
+          <p class="eyebrow">Render e ambienti</p>
+          <h2>Un racconto visivo completo, senza ripetizioni inutili.</h2>
         </div>
 
         <div class="video-layout">
@@ -155,21 +153,11 @@
           </article>
 
           <article class="video-card">
-            <video
-              controls
-              muted
-              loop
-              playsinline
-              preload="metadata"
-              poster="assets/interni_codex.png"
-              aria-label="Video render interno appartamento"
-              data-autoplay-video
-            >
-              <source
-                src="assets/videos/rendering_interni_appartamento_codex.mp4"
-                type="video/mp4"
-              />
-            </video>
+            <img
+              class="render-still"
+              src="assets/interni_codex.png"
+              alt="Render statico interno appartamento"
+            />
             <div>
               <p class="eyebrow">Appartamento</p>
               <h3>Interni residenziali</h3>
@@ -178,47 +166,17 @@
           </article>
 
           <article class="video-card">
-            <video
-              controls
-              muted
-              loop
-              playsinline
-              preload="metadata"
-              poster="assets/piano_commerciale_codex.png"
-              aria-label="Video render piano commerciale"
-              data-autoplay-video
-            >
-              <source
-                src="assets/videos/rendering_piano_commerciale_codex.mp4"
-                type="video/mp4"
-              />
-            </video>
+            <img
+              class="render-still"
+              src="assets/piano_commerciale_codex_corretto.png"
+              alt="Render statico piano commerciale"
+            />
             <div>
               <p class="eyebrow">Commerciale</p>
               <h3>Piano terra</h3>
               <p>Una visione dinamica dello spazio per attività, servizi o showroom.</p>
             </div>
           </article>
-        </div>
-      </section>
-
-      <section class="gallery" aria-label="Galleria immagini">
-        <button class="gallery-button active" data-image="assets/esterno_codex.png" data-title="Esterno">
-          Esterno
-        </button>
-        <button
-          class="gallery-button"
-          data-image="assets/piano_commerciale_codex.png"
-          data-title="Piano commerciale"
-        >
-          Piano commerciale
-        </button>
-        <button class="gallery-button" data-image="assets/interni_codex.png" data-title="Interni">
-          Interni
-        </button>
-        <div class="gallery-preview">
-          <img data-preview src="assets/esterno_codex.png" alt="Esterno" />
-          <span data-preview-title>Esterno</span>
         </div>
       </section>
 
