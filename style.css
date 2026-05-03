@@ -228,7 +228,7 @@ h3 {
   color: var(--white);
 }
 
-.intro,
+.proposal,
 .showcase,
 .video-section,
 .contact,
@@ -237,56 +237,56 @@ h3 {
   padding-left: clamp(20px, 5vw, 72px);
 }
 
-.intro {
+.proposal {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
-  gap: clamp(30px, 7vw, 90px);
-  padding-top: 84px;
-  padding-bottom: 72px;
-}
-
-.intro > p,
-.contact p,
-.feature-text p {
-  color: var(--muted);
-  font-size: 1.04rem;
-}
-
-.stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1.1fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: end;
+  padding-top: 72px;
+  padding-bottom: 64px;
   border-top: 1px solid var(--stone);
   border-bottom: 1px solid var(--stone);
 }
 
-.stats article {
-  min-height: 230px;
-  padding: clamp(24px, 4vw, 48px);
+.proposal-copy h2 {
+  max-width: 680px;
+}
+
+.proposal-points {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid var(--stone);
+  border-radius: 8px;
+  background: var(--stone);
+}
+
+.proposal-points article {
+  min-height: 190px;
   background: var(--sage-dark);
-  border-right: 1px solid var(--stone);
+  padding: clamp(22px, 3vw, 32px);
 }
 
-.stats article:last-child {
-  border-right: 0;
-}
-
-.stats span {
+.proposal-points span {
   display: block;
-  margin-bottom: 38px;
+  margin-bottom: 26px;
   color: var(--clay);
   font-weight: 800;
 }
 
-.stats strong {
+.proposal-points strong {
   display: block;
   margin-bottom: 10px;
   font-size: 1.1rem;
 }
 
-.stats p {
-  max-width: 330px;
+.proposal-points p,
+.contact p,
+.feature-text p {
   margin-bottom: 0;
   color: var(--muted);
+  font-size: 1.04rem;
 }
 
 .showcase {
@@ -317,6 +317,12 @@ h3 {
   width: 100%;
   height: 560px;
   object-fit: cover;
+}
+
+.feature img.space-image {
+  background: var(--sage-dark);
+  object-fit: contain;
+  object-position: center;
 }
 
 .feature-large img {
@@ -359,6 +365,14 @@ h3 {
   aspect-ratio: 16 / 9;
 }
 
+.video-card img {
+  width: 100%;
+  background: var(--sage-dark);
+  object-fit: contain;
+  object-position: center;
+  aspect-ratio: 16 / 9;
+}
+
 .video-card > div {
   flex: 1;
   padding: clamp(20px, 2.6vw, 30px);
@@ -371,55 +385,6 @@ h3 {
 .video-card h3 {
   margin-bottom: 10px;
   font-size: clamp(1.55rem, 2.3vw, 2.12rem);
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
-  background: var(--stone);
-  border-top: 1px solid var(--stone);
-  border-bottom: 1px solid var(--stone);
-}
-
-.gallery-button {
-  min-height: 66px;
-  border: 0;
-  background: var(--panel);
-  color: var(--ink);
-  cursor: pointer;
-  font: inherit;
-  font-weight: 800;
-}
-
-.gallery-button.active {
-  background: var(--clay);
-  color: var(--white);
-}
-
-.gallery-preview {
-  position: relative;
-  grid-column: 1 / -1;
-  min-height: 620px;
-  background: var(--ink);
-}
-
-.gallery-preview img {
-  width: 100%;
-  height: 620px;
-  object-fit: contain;
-}
-
-.gallery-preview span {
-  position: absolute;
-  left: 22px;
-  bottom: 22px;
-  border-radius: 999px;
-  background: rgba(15, 17, 16, 0.88);
-  color: var(--ink);
-  padding: 9px 15px;
-  font-size: 0.88rem;
-  font-weight: 800;
 }
 
 .contact {
@@ -572,10 +537,10 @@ h3 {
     padding-bottom: 9vh;
   }
 
-  .intro,
+  .proposal,
   .showcase-grid,
   .contact,
-  .stats {
+  .proposal-points {
     grid-template-columns: 1fr;
   }
 
@@ -583,20 +548,12 @@ h3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .stats article {
+  .proposal-points article {
     min-height: auto;
-    border-right: 0;
-    border-bottom: 1px solid var(--stone);
-  }
-
-  .stats article:last-child {
-    border-bottom: 0;
   }
 
   .feature img,
-  .feature-large img,
-  .gallery-preview,
-  .gallery-preview img {
+  .feature-large img {
     height: 520px;
     min-height: 0;
   }
@@ -631,16 +588,8 @@ h3 {
     padding-left: 16px;
   }
 
-  .gallery {
-    grid-template-columns: 1fr;
-  }
-
   .video-layout {
     grid-template-columns: 1fr;
-  }
-
-  .gallery-preview {
-    grid-column: auto;
   }
 
   .footer {
