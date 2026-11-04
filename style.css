@@ -78,6 +78,41 @@ h2 { font-size: clamp(38px, 4vw, 58px); }
   .plan-tabs { gap: 10px 24px; }
 }
 
+/* Apartment prices supplied by the construction company. */
+.apartments { border-top: 1px solid var(--line); }
+.apartment-floor + .apartment-floor { margin-top: 48px; }
+.floor-title { font-size: 32px; margin-bottom: 20px; }
+.apartment-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; }
+.apartment-card { min-width: 0; padding: 26px 0 0; border-top: 1px solid var(--ink); }
+.apartment-heading h4 { margin: 0; font: 400 29px/1.2 var(--display); letter-spacing: -.02em; }
+.apartment-heading p { margin-top: 6px; font-size: 13px; color: var(--muted); }
+.apartment-details { margin: 24px 0; }
+.apartment-details > div { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.apartment-details dt { font-size: 13px; color: var(--muted); }
+.apartment-details dd { margin: 0; font-size: 15px; text-align: right; }
+.apartment-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 18px; }
+.apartment-price { font: 400 clamp(32px, 3vw, 42px)/1.1 var(--display); white-space: nowrap; }
+.apartment-bottom .text-link { font-size: 13px; gap: 12px; }
+.prices-note { max-width: 850px; margin-top: 40px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+@media (max-width: 1000px) and (min-width: 761px) {
+  .site-header { flex-wrap: wrap; gap: 0; }
+  .js .menu-toggle { display: flex; }
+  .site-header nav { width: 100%; flex-wrap: wrap; padding-top: 22px; }
+  .js .site-header nav { display: none; }
+  .js .site-header nav.is-open { display: flex; }
+}
+@media (max-width: 760px) {
+  .apartment-grid { grid-template-columns: 1fr; gap: 28px; }
+  .apartment-floor + .apartment-floor { margin-top: 36px; }
+  .floor-title { font-size: 30px; margin-bottom: 18px; }
+  .apartment-card { padding-top: 22px; }
+  .apartment-details > div { gap: 14px; }
+  .apartment-details dt { font-size: 12px; }
+  .apartment-details dd { font-size: 14px; }
+  .prices-note { margin-top: 32px; }
+}
+
 /* Direct contact with the construction company. */
 .contacts { border-top: 1px solid var(--line); }
 .contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 80px; align-items: start; }
