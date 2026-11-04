@@ -2,6 +2,8 @@
 
 Sito della Palazzina Arabona, Via XX Settembre 52, Manoppello Scalo.
 
+Aggiornamento 4 novembre 2026: quattro nuovi rendering originali del fronte e del retro, di giorno e di sera, nella galleria Architettura. Aggiunta una terza scheda alle soluzioni abitative con la pianta del piano terra, giardini e area parcheggi. La proposta commerciale precedente resta consultabile nella sezione Piano strada, di giorno e di sera. Le cinque nuove immagini sono conservate senza alterazioni in `assets/progetto/`, con suffisso `20261104`.
+
 Aggiornamento 31 ottobre 2026: rendering originali di giorno e sera, confronto interattivo fra piano tipo con due appartamenti e tavola del sottotetto con un’unica abitazione, possibilità commerciale o residenziale al piano strada. Il film esterno originale è mantenuto e descritto come concept.
 
 Sezione Contatti con i recapiti ufficiali di Shala Costruzioni: telefono +39 347 740 5570, email costruzionishala@gmail.com, Via XX Settembre 109, 65024 Manoppello Scalo (PE), orari Lun–Sab 08:00–19:00. Fonte: https://www.shala-costruzioni.it/contatti/. Link WhatsApp al numero internazionale 393477405570 con testo precompilato relativo alla Palazzina Arabona. L’indirizzo del progetto (civico 52) è distinto dall’indirizzo dell’impresa (civico 109).
