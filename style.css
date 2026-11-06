@@ -78,6 +78,15 @@ h2 { font-size: clamp(38px, 4vw, 58px); }
   .plan-tabs { gap: 10px 24px; }
 }
 
+/* Full introductory board, shown without cropping on every screen. */
+.project-overview { padding-top: 28px; padding-bottom: 28px; border-bottom: 1px solid var(--line); }
+.project-overview img { width: 100%; height: auto; }
+.project-overview figcaption { display: flex; justify-content: flex-end; margin-top: 12px; }
+.project-overview .text-link { font-size: 12px; gap: 12px; }
+@media (max-width: 760px) {
+  .project-overview { padding-top: 18px; padding-bottom: 22px; }
+}
+
 /* Apartment prices supplied by the construction company. */
 .apartments { border-top: 1px solid var(--line); }
 .apartment-floor + .apartment-floor { margin-top: 48px; }
