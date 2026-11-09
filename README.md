@@ -2,6 +2,8 @@
 
 Sito della Palazzina Arabona, Via XX Settembre 52, Manoppello Scalo.
 
+Aggiornamento 9 novembre 2026: sostituita la planimetria del piano terra nella scheda Piano terra e giardini e in tutti i collegamenti al visualizzatore con la nuova tavola originale, che distingue le corti degli appartamenti dalla corte del palazzo e indica i parcheggi di pertinenza esclusiva. File: `assets/progetto/pianta-piano-terra-20261109.jpg`.
+
 Aggiornamento 6 novembre 2026: tavola di presentazione generale di Shala Costruzioni in apertura, subito sotto la testata, a larghezza piena e senza ritagli. Immagine originale conservata in `assets/progetto/presentazione-generale-20261106.jpg`, apribile nel visualizzatore con ingrandimento. Il collegamento iniziale del marchio porta alla nuova presentazione.
 
 Listino del 4 novembre 2026: sezione Appartamenti e prezzi con otto unità, due per piano (terra, primo, secondo, attico), superfici degli appartamenti separate dai balconi, giardini e corti private al piano terra, numero di posti auto e prezzi esatti comunicati da Shala Costruzioni tramite il proprietario. Ogni unità ha un collegamento WhatsApp con il proprio numero, piano, superficie e prezzo precompilati. Nessun messaggio viene inviato automaticamente. La planimetria del sottotetto accorpato resta un’ipotesi alternativa; il listino riguarda le due unità separate.
